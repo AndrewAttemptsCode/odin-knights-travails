@@ -12,7 +12,7 @@ function knightMoves(start, end) {
     const [[x, y], path] = queue.shift();
     console.log(`Exploring position: ${JSON.stringify([x, y])} at path: ${JSON.stringify(path)}.`);
 
-    if (x === end[0] & y === end[1]) return path;
+    if (x === end[0] && y === end[1]) return path;
 
     for (const [dx, dy] of directions) {
       const newX = x + dx;
